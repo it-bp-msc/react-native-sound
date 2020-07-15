@@ -50,6 +50,14 @@ declare class Sound {
    */
   static setMode(mode: AVAudioSessionMode): void
 
+
+
+  /**
+   * Use the earpiece  
+   * ITB Custtom function
+   */
+  static useEarPiece(): void
+
   /**
    * @param filenameOrFile Either absolute or relative path to the sound file or the `require` call.
    * @param basePathOrCallback Optional base path of the file. Omit this or pass '' if filename is an absolute path; you may use one of the predefined directories: Sound.MAIN_BUNDLE, Sound.DOCUMENT, Sound.LIBRARY, Sound.CACHES. If you are using `require` to define filepath, then set the callback function as the second argument.
@@ -181,6 +189,8 @@ declare class Sound {
    * Whether the player is playing or not.
    */
   isPlaying(): boolean
+
+
 }
 
 export = Sound;

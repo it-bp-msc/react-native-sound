@@ -238,6 +238,11 @@ Sound.prototype.isPlaying = function() {
   return this._playing;
 }
 
+Sound.useEarPiece = function() {
+  RNSound.useEarPiece();
+}
+
+
 Sound.enable = function(enabled) {
   RNSound.enable(enabled);
 };
